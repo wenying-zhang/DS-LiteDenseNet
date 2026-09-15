@@ -20,7 +20,9 @@ repository-code: "https://github.com/wenying-zhang/DS-LiteDenseNet"
 url: "https://github.com/wenying-zhang/DS-LiteDenseNet"
 version: "1.0.0"
 date-released: "2026-09-15"
-doi: "10.5281/zenodo.22479137"
+# DOI-PENDING: uncomment the line below and insert the Zenodo version DOI
+# once the v1.0.0 release has been archived.
+# doi: ""
 keywords:
   - chest radiography
   - lightweight convolutional networks

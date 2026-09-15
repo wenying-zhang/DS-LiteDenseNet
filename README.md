@@ -17,8 +17,8 @@ licences of those corpora do not clearly permit redistributing models derived
 from them. Section 3 below regenerates the checkpoints from scratch.
 
 **Repository:** <https://github.com/wenying-zhang/DS-LiteDenseNet>
-**Archive, v1.0.0:** <https://doi.org/10.5281/zenodo.22479137>
-**Archive, all versions:** <https://doi.org/10.5281/zenodo.22479136>
+**Archive, v1.0.0:** DOI-PENDING (assigned by Zenodo when v1.0.0 is archived)
+**Archive, all versions:** DOI-PENDING (Zenodo concept DOI for the project)
 
 Cite the version DOI if you need a reference guaranteed to resolve to a fixed
 state — that is the one the manuscript cites, so a reader reaches exactly the
