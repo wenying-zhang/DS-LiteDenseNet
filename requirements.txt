@@ -1,0 +1,42 @@
+# Python 3.10 or 3.11.
+#
+# Install PyTorch first if a specific CUDA build is required, choosing the
+# wheel index that matches your driver from pytorch.org, for example
+#   pip install torch torchvision \
+#       --index-url https://download.pytorch.org/whl/cu128
+# then install the rest with `pip install -r requirements.txt`.
+#
+# Nothing here depends on a particular PyTorch version; the ranges below are
+# ranges rather than pins. Upper bounds guard against breaking API changes;
+# they do not mark known faults.
+
+torch>=2.0,<3.0
+torchvision>=0.15,<1.0
+
+# NumPy 2.0 changed the C ABI. The lower bounds on the three compiled
+# scientific packages below are the first releases that ship NumPy-2 wheels,
+# so that a default `pip install` cannot resolve to a NumPy 2.x / SciPy 1.10
+# pairing that fails on import. All three still support NumPy 1.x, so the
+# range remains satisfiable on an older stack.
+numpy>=1.24,<3.0
+pandas>=2.2.2,<3.0
+scipy>=1.13,<2.0            # paired t-test, t-distribution for the NI bound
+scikit-learn>=1.5,<2.0      # AUROC, average precision, stratified splitting
+
+pillow>=9.0                 # PNG/JPG decoding, bit-depth-aware conversion
+opencv-python>=4.7          # CLAHE only (datasets.py)
+pydicom>=2.3,<4.0           # RSNA and VinDr DICOM
+matplotlib>=3.6             # figures, Agg backend
+
+thop>=0.1.1                 # FLOP counts; optional, reported as None if absent
+torchxrayvision>=1.0        # ChestX-Det PSPNet lung segmenter; run_gradcam.py
+                            # and geometric_reference.py. Downloads ~260 MB of
+                            # weights on first use
+
+# pydicom decodes uncompressed transfer syntaxes on its own. A release whose
+# files use a compressed one (JPEG Lossless, JPEG 2000) raises
+# NotImplementedError on .pixel_array until a decoder backend is present.
+# Install one only if that happens; which package is needed depends on the
+# syntax, and the extras that bundle them are named differently in pydicom 2
+# and 3, so they are not pinned here:
+#   pip install pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg

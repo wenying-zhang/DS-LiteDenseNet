@@ -1,0 +1,29 @@
+# Local artefacts -- none of this belongs in the repository
+data/
+checkpoints/
+results/
+# Manifests hold absolute paths resolved on the machine that built them,
+# so a committed manifest leaks a local directory layout and cannot be used
+# elsewhere. Rebuild with data_manifests.py instead.
+manifests/
+# Generated figures. figures/ is config.FIG_DIR, written by the plotting
+# scripts; figs/ is the manuscript's own copy of the same PDFs. Both are
+# rebuilt from results/ by the commands in the README, and the manuscript
+# sources are not tracked here, so neither belongs in the repository.
+figures/
+figs/
+# export_reliability_curve.py writes its curve to the working directory.
+reliability_curve_*.csv
+reliability_curve_*.pdf
+*.npz
+*.pt
+*.pth
+*.ckpt
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

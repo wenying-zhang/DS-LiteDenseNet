@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "DS-LiteDenseNet evaluation code"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Wenying
+    orcid: "https://orcid.org/0009-0007-8348-1055"
+    affiliation: "College of Mathematical Sciences, Harbin Engineering University"
+  - family-names: Li
+    given-names: Jiahang
+    orcid: "https://orcid.org/0009-0002-5258-1161"
+    affiliation: "College of Mathematical Sciences, Harbin Engineering University"
+  - family-names: Wang
+    given-names: Ting
+    orcid: "https://orcid.org/0000-0002-6411-1493"
+    affiliation: "Department of Respiratory Diseases, The First Affiliated Hospital of Harbin Medical University"
+license: MIT
+repository-code: "https://github.com/wenying-zhang/DS-LiteDenseNet"
+url: "https://github.com/wenying-zhang/DS-LiteDenseNet"
+version: "1.0.0"
+date-released: "2026-09-15"
+doi: "10.5281/zenodo.22479137"
+keywords:
+  - chest radiography
+  - lightweight convolutional networks
+  - depthwise-separable convolution
+  - external validation
+  - model calibration
+  - Grad-CAM
+preferred-citation:
+  type: article
+  title: "DS-LiteDenseNet: a parameter-frugal chest X-ray classifier evaluated for non-inferiority, cross-hospital transfer, and faithfulness"
+  authors:
+    - family-names: Zhang
+      given-names: Wenying
+      orcid: "https://orcid.org/0009-0007-8348-1055"
+      affiliation: "College of Mathematical Sciences, Harbin Engineering University"
+    - family-names: Li
+      given-names: Jiahang
+      orcid: "https://orcid.org/0009-0002-5258-1161"
+      affiliation: "College of Mathematical Sciences, Harbin Engineering University"
+    - family-names: Wang
+      given-names: Ting
+      orcid: "https://orcid.org/0000-0002-6411-1493"
+      affiliation: "Department of Respiratory Diseases, The First Affiliated Hospital of Harbin Medical University"
+  year: 2026
+  notes: "Manuscript submitted for publication; journal details will be updated on acceptance."
