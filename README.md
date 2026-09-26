@@ -19,7 +19,8 @@ from them. Section 3 below regenerates the checkpoints from scratch.
 
 **Repository:** <https://github.com/wenying-zhang/DS-LiteDenseNet>
 **Release matching the manuscript:** v1.0.0 (2026-09-26)
-<!-- Zenodo archive DOI of release v1.0.0: to be added here once Zenodo has minted it. -->
+**Archive, v1.0.0:** <https://doi.org/10.5281/zenodo.22972571>
+**Archive, all versions:** <https://doi.org/10.5281/zenodo.22972570>
 
 ---
 
